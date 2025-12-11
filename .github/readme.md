@@ -70,6 +70,27 @@ See all [**Quick Start**](https://depth.brokensrc.dev/docs/) options in the webs
   <img src="https://github.com/user-attachments/assets/a32e5709-d8ea-48e6-bdc2-f9540f5323de">
 </a>
 
+**Ensure submodules are on main**
+
+```
+git submodule foreach --recursive 'git checkout main || true'
+```
+
+**Create venv and install dependencies**
+
+```
+uv sync --all-packages
+```
+
+**Start using any Project**
+
+```
+uv run depthflow
+uv run depthflow input -i your.jpg -b background.jpg --export-mobile main 
+```
+
+
+
 ## ♻️ Community
 
 <small>✅ **Be featured** here if you're using DepthFlow in your projects or art, get in touch!</small>
